@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+    
+    <title>Course Enrollment Form</title>
+</head>
+<body>
+
+<header>
+    <h1>Online Learning Platform</h1>
+    <p>Course Enrollment Form</p>
+</header>
+
+<main>
+
+    <section>
+        <h2>Enrollment Completion Status</h2>
+        <progress value="60" max="100"></progress>
+        <p>60% Completed</p>
+    </section>
+
+
+    <section>
+        <h2>Student Details</h2>
+
+        <form action="details.html" method="post">
+
+         
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="5">
+                <br><br>
+
+             
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                <br><br>
+
+          
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" max="40" required>
+                <br><br>
+
+       
+                <label for="course">Select Course:</label>
+                <input list="courses" id="course" name="course"   placeholder="Choose a course" required>
+                
+                <datalist id="courses">
+                    <option value="HTML & CSS">
+                    <option value="Java Full Stack">
+                    <option value=".NET Full Stack">
+                    <option value="Python Programming">
+                    
+                </datalist>
+                <br><br>
+
+
+                <label for="skill">Skill Level:</label>
+                <meter id="skill" min="0" max="100" value="40"
+                       low="30" high="70" optimum="90">
+                </meter>
+                <p>Beginner (0–30) | Intermediate (31–70) | Advanced (71–100)</p>
+                <br>
+
+          
+                <label for="experience">Years of Experience (0-10):</label>
+                <input type="range" id="experience" name="experience"
+                       min="0" max="10" step="1">
+      
+                <input type="submit" value="Enroll Now">
+
+            </fieldset>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Online Learning Platform | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
