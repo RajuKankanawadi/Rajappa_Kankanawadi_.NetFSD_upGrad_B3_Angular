@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Analysis Tool</title>
+</head>
+<body>
+
+    <h2>Number Analysis Tool</h2>
+    <p>Open Console window for seen Output.. </p>
+
+    <script>
+      
+        let number = 15;   
+
+        // 1️> Check Positive or Negative using Ternary Operator
+        let result = (number >= 0) ? "Positive Number" : "Negative Number";
+        console.log("Number is:", result);
+
+        // 2️> Check Even or Odd using if-else
+        if (number % 2 === 0) {
+            console.log("Number is Even:", number);
+        } else {
+            console.log("Number is Odd:", number);
+        }
+
+        // 3> Print numbers from 1 to given number using loop
+        console.log("Numbers from 1 to", number);
+
+        for (let i = 1; i <= number; i++) {
+            console.log(i);
+        }
+    </script>
+
+</body>
+</html>
