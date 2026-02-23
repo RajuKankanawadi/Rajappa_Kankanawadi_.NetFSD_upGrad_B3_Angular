@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Profile Manager</title>
+    <style>
+        #profileCard {
+            width: 300px;
+            padding: 15px;
+            border: 5px solid #282828;
+            border-radius: 8px;
+            background-color: rgb(230, 190, 137);
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body style="background-color: aqua;" onload="updateStudentProfile(student)">
+
+    <h2 style="color: maroon;">Student Profile Manager</h2>
+
+    <div id="profileCard"></div>
+
+    <br>
+    <input  type="number"  style="background-color: rgb(193, 199, 202);"  id="newMarks" placeholder="Enter new marks">
+    <button style="background-color: rgb(212, 88, 88);" onclick="updateMarksFromInput()">Update Marks</button>
+
+    <script>
+
+       
+        var student = {
+            name: "Rahul",
+            rollNo: 101,
+            marks: 75
+        };
+
+       
+        function updateStudentProfile(studentObj) {
+
+            document.getElementById("profileCard").innerHTML =
+                "<h3>Student Details</h3>" +
+                "<p><strong>Name:</strong> " + studentObj.name + "</p>" +
+                "<p><strong>Roll No:</strong> " + studentObj.rollNo + "</p>" +
+                "<p><strong>Marks:</strong> " + studentObj.marks + "</p>";
+        }
+
+      
+        
+        function updateMarks(newMarks) {
+
+            student.marks = newMarks;  
+
+            updateStudentProfile(student);  
+        }
+
+   
+        function updateMarksFromInput() {
+            var marksValue = document.getElementById("newMarks").value;
+
+            if (marksValue !== "") {
+                updateMarks(marksValue);
+            }
+        }
+
+    </script>
+
+</body>
+</html>

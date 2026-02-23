@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Info</title>
+</head>
+
+<body style="background-color: blanchedalmond;">
+
+    <h2 style="background-color: bisque;">User Information</h2>
+
+    <button onclick="createAndDisplayUser()">
+        Show User Info 
+    </button>
+    <br> <br> <br>
+    <fieldset style="background-color: cornsilk;">
+    <p style="color: brown;" id="name"></p>
+    <p style="color: rgb(11, 52, 175);" id="age"></p>
+    <p style="color: rgb(244, 0, 0);" id="city"></p>
+
+    </fieldset>
+
+    <script>
+
+       
+        function createAndDisplayUser() {
+
+
+            var user = {
+                name: "Rahul",
+                age: 25,
+                city: "Bangalore"
+            };
+
+            displayUserInfo(user);
+        }
+
+    
+        function displayUserInfo(userObj) {
+
+            document.getElementById("name").innerHTML =
+                "Name: " + userObj.name;
+
+            document.getElementById("age").innerHTML =
+                "Age: " + userObj.age;
+
+            document.getElementById("city").innerHTML =
+                "City: " + userObj.city;
+        }
+
+    </script>
+
+</body>
+</html>
