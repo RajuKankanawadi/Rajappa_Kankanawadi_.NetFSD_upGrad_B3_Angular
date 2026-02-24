@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+
+    <title>Product Cart Summary</title>
+
+</head>
+
+<body>
+
+<h2>Open Console to View Cart Summary</h2>
+
+<script type="module">
+
+const cart = [
+    { name: "Laptop", price: 50000, quantity: 1 },
+    { name: "Mouse", price: 500, quantity: 2 },
+    { name: "Keyboard", price: 1500, quantity: 1 }
+];
+
+const calculateCartTotal = (products) =>
+    products.reduce((total, product) =>
+        total + (product.price * product.quantity), 0);
+
+
+const generateInvoice = (products) => {
+
+    
+    const items = products.map(product =>
+        `${product.name} - ${product.price}-Rs. x ${product.quantity} = ${product.price * product.quantity}-Rs.`
+    );
+
+    const totalAmount = calculateCartTotal(products);
+
+    return `
+========= INVOICE ===================
+${items.join("\n")}
+-------------------------------------
+Total Amount: ${totalAmount}-Rs.
+=====================================`;
+};
+
+
+
+
+
+const invoice = generateInvoice(cart);
+
+
+console.log(invoice);
+
+
+
+</script>
+
+</body>
+</html>

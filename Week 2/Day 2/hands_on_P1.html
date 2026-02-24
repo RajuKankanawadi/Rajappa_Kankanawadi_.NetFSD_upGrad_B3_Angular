@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Student Marks Analyzer</title>
+    <style>
+        body {
+            font-family: Arial ;
+            background-color:rgb(217, 171, 101);
+            padding: 30px;
+        }
+        .d2 {
+            background: rgb(212, 107, 107);
+            padding: 20px;
+            border-radius: 8px;
+            width: 400px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="d2">
+        <h2> Student Marks Analysis</h2>
+        <div id="output"></div>
+    </div>
+
+   
+    <script>
+
+        const marks = [78, 85, 62, 90, 55];
+
+       
+        const calculateTotal = (marksArray) =>
+            marksArray.reduce((accumalator, currentVal) => accumalator + currentVal, 0);
+
+     
+        const calculateAverage = (marksArray) => {
+            const total = calculateTotal(marksArray);
+            return total / marksArray.length;
+        };
+
+        
+        const getResult = (average) =>
+            average >= 40 ? "Pass" : "Fail";
+
+       
+        const addGraceMarks = (marksArray) =>
+            marksArray.map(mark => mark + 5);
+
+      
+        const analyzeMarks = () => {
+
+            const updatedMarks = addGraceMarks(marks);
+            const total = calculateTotal(updatedMarks);
+            const average = calculateAverage(updatedMarks);
+            const result = getResult(average);
+
+            const outputDiv = document.getElementById("output");
+
+            outputDiv.innerHTML = `
+                <p><strong>Marks (with grace):</strong> ${updatedMarks}</p>
+                <p><strong>Total Marks:</strong> ${total}</p>
+                <p><strong>Average Marks:</strong> ${average.toFixed(2)}</p>
+                <p><strong>Result:</strong> ${result}</p>
+            `;
+        };
+
+     
+        analyzeMarks();
+
+    </script>
+
+</body>
+</html>
