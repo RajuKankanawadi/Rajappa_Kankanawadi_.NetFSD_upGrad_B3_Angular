@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Theme Toggle page</title>
+
+    <style>
+
+        body {
+            font-family: Arial;
+            color: crimson ; 
+        }
+
+        .light-theme {
+            background-color: white;
+            color: black;
+        }
+
+        .dark-theme {
+            background-color: #121212;
+            color: white;
+        }
+
+        #toggleBtn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            background-color: rgb(122, 174, 174);
+        }
+    </style>
+</head>
+
+<body class="light-theme">
+
+    <h2>Theme Toggle Application</h2>
+    <p>This is a sample blog content. Switch between Light and Dark mode.</p>
+
+    <button id="toggleBtn">Switch to Dark Mode</button>
+
+<script>
+
+    let toggleBtn = document.getElementById("toggleBtn");
+
+    
+    let applySavedTheme = () => 
+    {
+        let savedTheme = localStorage.getItem("theme");
+
+        if(savedTheme)
+        {
+            document.body.className = savedTheme;
+            updateButtonText(savedTheme);
+        }
+    };
+
+
+    let updateButtonText = (currentTheme) =>
+    {
+        if(currentTheme === "dark-theme")
+        {
+            toggleBtn.textContent = "Switch to Light Mode";
+        }
+        else
+        {
+            toggleBtn.textContent = "Switch to Dark Mode";
+        }
+    };
+
+
+    
+    let toggleTheme = () =>
+    {
+        let currentTheme = document.body.className;
+
+        if(currentTheme === "light-theme")
+        {
+            document.body.className = "dark-theme";
+            localStorage.setItem("theme", "dark-theme");
+            updateButtonText("dark-theme");
+        }
+        else
+        {
+            document.body.className = "light-theme";
+            localStorage.setItem("theme", "light-theme");
+            updateButtonText("light-theme");
+        }
+    };
+
+
+    
+    toggleBtn.addEventListener("click", toggleTheme);
+
+
+    applySavedTheme();
+
+</script>
+
+</body>
+</html>

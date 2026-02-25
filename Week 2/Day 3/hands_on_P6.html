@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic To-Do List</title>
+    <style>
+        body {
+            font-family: Georgia;
+            text-align: center;
+            margin-top: 40px;
+            background-color: rgb(131, 114, 93);
+
+        }
+
+        #taskInput {
+            padding: 8px;
+            width: 250px;
+            background-color: antiquewhite;
+        }
+
+        button {
+            padding: 8px 12px;
+            margin-left: 5px;
+            cursor: pointer;
+            background-color: rgb(131, 155, 176);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        li {
+            padding: 10px;
+            margin: 5px auto;
+            width: 350px;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 5px;
+        }
+
+        .completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        .delete-btn {
+            background-color: red;
+            color: rgb(163, 133, 133);
+            padding: 5px 8px;
+        }
+
+        h2 {
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Dynamic To-Do List</h2>
+
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <button id="addBtn">Add Task</button>
+
+    <ul id="taskList"></ul>
+
+<script>
+
+
+const TodoApp = (function() {
+
+    const taskInput = document.getElementById("taskInput");
+    const addBtn = document.getElementById("addBtn");
+    const taskList = document.getElementById("taskList");
+
+
+    const addTask = () => {
+        const taskText = taskInput.value.trim();
+
+        if (taskText === "") {
+            alert("Please enter a task");
+            return;
+        }
+
+        const li = document.createElement("li");
+
+        li.innerHTML = `
+            <span class="task-text">${taskText}</span>
+            <button class="delete-btn">Delete</button>
+        `;
+
+        taskList.appendChild(li);
+        taskInput.value = "";
+    };
+
+    const handleTaskClick = (event) => {
+
+ 
+        if (event.target.classList.contains("delete-btn")) {
+            event.target.parentElement.remove();
+        }
+
+ 
+        if (event.target.classList.contains("task-text")) {
+            event.target.classList.toggle("completed");
+        }
+    };
+
+    const init = () => {
+        addBtn.addEventListener("click", addTask);
+
+        
+        taskList.addEventListener("click", handleTaskClick);
+    };
+
+    return {
+        init
+    };
+
+})();
+
+TodoApp.init();
+
+</script>
+
+</body>
+</html>

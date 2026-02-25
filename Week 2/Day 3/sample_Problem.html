@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Asyncronous Programming</title>
+    <style>
+
+        #h3 {
+            color: crimson; 
+            text-align: center;
+            font-size: xx-large;
+        }
+
+        #b1 {
+            background-color: bisque;
+            color: deeppink;
+            
+        }
+
+         #b2 {
+            background-color:  bisque;
+             color: fuchsia;
+           
+        }
+
+        #list1 {
+            border:2px solid rgb(7, 7, 157);
+            padding:30px;
+            background-color: rgb(185, 222, 222);
+        }
+
+    </style>
+</head>
+
+<body style="background-color: burlywood;">
+
+<h3 id="h3">AJAX Programming in JavaScript</h3>
+
+<hr/>
+<br><br>
+
+<button id="b1"  onclick="fn_getDataPromise()">Get Data (Promise)</button>
+
+<button id="b2"  onclick="fn_getDataAsync()">Get Data (Async/Await)</button>
+
+<br/><br/>
+
+<ol id="list1">
+</ol>
+
+<script>
+
+let lstObj = document.getElementById("list1");
+
+
+let fn_getDataPromise = () =>
+{
+    let url = "https://jsonplaceholder.typicode.com/users";
+
+    lstObj.innerHTML = "<li>Loading data...</li>";
+
+    fetch(url).then((response) =>
+        {
+            if(!response.ok)
+            {
+                throw new Error("Network response was not OK");
+            }
+            return response.json();
+        })
+        .then((jsonResponse) =>
+        {
+            displayData(jsonResponse);
+        })
+        .catch((error) =>
+        {
+            lstObj.innerHTML = `<li style="color:red;">Error: ${error.message}</li>`;
+        });
+};
+
+
+let fn_getDataAsync = async () =>
+{
+    try
+    {
+        let url = "https://jsonplaceholder.typicode.com/users";
+
+        lstObj.innerHTML = "<li>Loading data...</li>";
+
+        let response = await window.fetch(url);
+
+        if(!response.ok)
+        {
+            throw new Error("Failed to fetch data");
+        }
+
+        let jsonResponse = await response.json();
+
+        displayData(jsonResponse);
+    }
+    catch(error)
+    {
+        lstObj.innerHTML = `<li style="color:red;">Error: ${error.message}</li>`;
+    }
+};
+
+
+
+let displayData = (dataArray) =>
+{
+    let str = "";
+
+    for(let item of dataArray)
+    {
+        str += `
+            <li>
+                <strong>Name:</strong> ${item.name} <br/>
+                <strong>Email:</strong> <span style="color:blue;">${item.email}</span> <br/>
+                <strong>City:</strong> ${item.address.city}
+            </li>
+            <br/>
+        `;
+    }
+
+    lstObj.innerHTML = str;
+};
+
+</script>
+
+</body>
+</html>

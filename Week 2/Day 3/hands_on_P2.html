@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Data Report</title>
+    <style>
+        body {
+            font-family: Cambria;
+            padding: 30px;
+            background-color: #7aaacb;
+            font-size: large;
+            
+        }
+
+        select, button {
+            padding: 10px 15px;
+            margin-right: 10px;
+            cursor: pointer;
+            background-color: rgb(129, 197, 175);
+           
+        }
+
+        #output {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgb(201, 125, 125);
+            border-radius: 8px;
+            width: 350px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<h2 style="color: rgb(94, 44, 175); text-align: center;"> Weather Data Fetcher</h2>
+
+
+<select id="citySelect">
+    <option value="">Select City</option>
+    <option value="12.97,77.59">Bangalore</option>
+    <option value="28.61,77.20">Delhi</option>
+    <option value="19.07,72.87">Mumbai</option>
+    <option value="13.08,80.27">Chennai</option>
+</select>
+
+<button onclick="getWeatherPromise()">Using Promises</button>
+<button onclick="getWeatherAsync()">Using Async/Await</button>
+
+<div id="output"></div> 
+
+<script>
+
+    let outputDiv = document.getElementById("output");
+
+    
+    let getAPIURL = () => {
+
+        let selectedValue = document.getElementById("citySelect").value;
+        let [latitude, longitude] = selectedValue.split(",");
+
+        return `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true`;
+    };
+
+   
+
+    let getWeatherPromise = () => {
+
+        outputDiv.innerHTML = "Loading weather data...";
+
+        let apiURL = getAPIURL();
+
+        fetch(apiURL)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                return response.json();
+            })
+            .then(data => {
+
+                let weather = data.current_weather;
+
+                outputDiv.innerHTML = `
+                    <h3>Weather Report (Promise)</h3>
+                    <p><strong>Temperature:</strong> ${weather.temperature} °C</p>
+                    <p><strong>Wind Speed:</strong> ${weather.windspeed} km/h</p>
+                    <p><strong>Time:</strong> ${weather.time}</p>
+                `;
+            })
+            .catch(error => {
+                outputDiv.innerHTML = `Error: ${error.message}`;
+            });
+    };
+
+
+
+    let getWeatherAsync = async () => {
+
+        try {
+
+            outputDiv.innerHTML = "Loading weather data...";
+
+            let apiURL = getAPIURL();
+
+            let response = await fetch(apiURL);
+
+            if (!response.ok) {
+                throw new Error("Failed to fetch weather data");
+            }
+
+            let data = await response.json();
+            let weather = data.current_weather;
+
+            outputDiv.innerHTML = `
+                <h3>Weather Report (Async/Await)</h3>
+                <p><strong>Temperature:</strong> ${weather.temperature} °C</p>
+                <p><strong>Wind Speed:</strong> ${weather.windspeed} km/h</p>
+                <p><strong>Time:</strong> ${weather.time}</p>
+            `;
+
+        } catch (error) {
+            outputDiv.innerHTML = ` Error: ${error.message}`;
+        }
+    };
+
+</script>
+
+</body>
+</html>

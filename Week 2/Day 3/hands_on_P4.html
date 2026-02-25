@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Async Task Manager</title>
+    <style>
+
+        body { 
+            font-family: Arial; 
+            padding: 40px; 
+            background-color: bisque;
+        }
+
+        button { 
+            margin: 5px; 
+        }
+
+        li  { 
+            cursor: pointer;
+           
+        }
+
+        .selected { 
+            background-color: rgb(124, 190, 211);
+         }
+
+        #message {
+            margin-top: 10px;
+            font-weight: bold;
+            color: green; 
+
+            }
+    </style>
+</head>
+<body>
+
+    <h2 style="color: chocolate;">Task Manager (Add / Delete / List)</h2>
+
+    <input type="text" id="taskInput" placeholder="Enter task">
+
+    <br><br>
+
+    <button onclick="addTask()">Add</button>
+    <button onclick="deleteSelectedTask()">Delete</button>
+    <button onclick="listTasks()">List</button>
+
+    <ul id="taskList"></ul>
+
+    <div id="message"></div>
+
+    <script>
+
+        let tasks = [];
+        let selectedTask = null;
+
+        let taskInput = document.getElementById("taskInput");
+        let taskList = document.getElementById("taskList");
+        let messageDiv = document.getElementById("message");
+
+       
+        let saveTask = (task) => {
+            return new Promise(resolve => {
+                setTimeout(() => {
+                    tasks.push(task);
+                    resolve(`Task "${task}" added successfully.`);
+                }, 1000);
+            });
+        };
+
+        let getTasks = () => {
+            return new Promise(resolve => {
+                setTimeout(() => {
+                    resolve(tasks);
+                }, 1000);
+                });
+        };
+
+        let removeTask = (taskName) => {
+            return new Promise(resolve => {
+                setTimeout(() => {
+                    tasks = tasks.filter(task => task !== taskName);
+                    resolve(`Task "${taskName}" deleted successfully.`);
+                }, 1000);
+            });
+        };
+
+
+        let addTask = async () => {
+            let task = taskInput.value.trim();
+            if (!task) return;
+
+            let result = await saveTask(task);
+            messageDiv.innerHTML = `${result}`;
+
+            taskInput.value = "";
+        };
+
+      
+        let listTasks = async () => {
+            let allTasks = await getTasks();
+
+            taskList.innerHTML = "";
+
+            allTasks.forEach(task => {
+                let li = document.createElement("li");
+                li.textContent = task;
+
+                li.onclick = () => {
+                    document.querySelectorAll("li").forEach(item => 
+                        item.classList.remove("selected")
+                    );
+
+                    li.classList.add("selected");
+                    selectedTask = task;
+                };
+
+                taskList.appendChild(li);
+            });
+        };
+
+       
+
+        let deleteSelectedTask = async () => {
+
+            if (!selectedTask) {
+                messageDiv.innerHTML = `Please select a task to delete.`;
+                return;
+            }
+
+            let result = await removeTask(selectedTask);
+            messageDiv.innerHTML = `${result}`;
+
+            selectedTask = null;
+            listTasks();
+        };
+
+    </script>
+
+</body>
+</html>
