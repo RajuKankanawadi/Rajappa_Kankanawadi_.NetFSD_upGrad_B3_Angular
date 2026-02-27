@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pay Sys</title>
+
+    <style>
+        h1 {
+            color: chocolate;
+            text-align: center;
+            
+        }
+
+        h2 {
+            color: rgb(87, 10, 182);
+        }
+
+        #d1 {
+            font-family: 'Times New Roman';
+            color: rgb(188, 96, 25);
+            text-align: center;
+            font-size: larger;
+
+        }
+
+        #payBtn {
+            background-color: rgb(119, 161, 163);
+           
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Payment System</h2>
+
+    <button id="payBtn">Make Payments</button><br><br>
+
+    <fieldset>
+    <div id="d1"></div>
+    </fieldset>
+
+    <script>
+       
+        class Payment {
+            pay(amount) {
+                return "Processing payment..";
+            }
+        }
+
+        
+        class CreditCardPayment extends Payment {
+            pay(amount) {
+                return `Paid ${amount}-Rs. using Credit Card <br>`;
+            }
+        }
+
+ 
+        class UPIPayment extends Payment {
+            pay(amount) {
+                return `Paid ${amount}-Rs. using UPI <br>`;
+            }
+        }
+
+        class CashPayment extends Payment {
+            pay(amount) {
+                return `Paid ${amount}-Rs. using Cash <br>`;
+            }
+        }
+
+        let credit = new CreditCardPayment();
+        let upi = new UPIPayment();
+        let cash = new CashPayment();
+
+        let Div = document.getElementById("d1");
+        let button = document.getElementById("payBtn");
+
+        button.addEventListener("click", function() {
+
+            const payments = [credit, upi, cash];
+
+            Div.innerHTML = "<h2>Payment Results</h3>";
+
+            payments.forEach(payment => {
+                Div.innerHTML += payment.pay(500) + "<br>";
+            });
+
+        });
+    </script>
+
+</body>
+</html>

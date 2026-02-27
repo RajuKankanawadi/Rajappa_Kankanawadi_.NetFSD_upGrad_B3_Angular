@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Class</title>
+    <style>
+
+        h2 {
+            color: red;
+            text-align: center;
+        }
+
+        #d1 {
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body style="background-color: bisque;">
+
+    <h2>Student Details</h2>
+
+    <button style="background-color: rgb(113, 192, 98);" id="showBtn"> Student Details</button> <br><br>
+
+    <fieldset>
+    <div id="d1"></div>
+    </fieldset>
+
+    <script>
+       
+        class Student {
+
+            name;
+            rollNo;
+            marks;
+
+            constructor(name, rollNo, marks) {
+                this.name = name;
+                this.rollNo = rollNo;
+                this.marks = marks;
+            }
+            getDetails() {
+                return `Name: ${this.name} <br>
+                        Roll Number: ${this.rollNo} <br>
+                        Marks: ${this.marks}`;
+            }
+
+            getGrade() {
+                if (this.marks >= 90) {
+                    return "A";
+                } else if (this.marks >= 75) {
+                    return "B";
+                } else if (this.marks >= 50) {
+                    return "C";
+                } else {
+                    return "Fail";
+                }
+            }
+        }
+
+        let student1 = new Student("Shiva", 101, 92);
+        let student2 = new Student("Anjali", 102, 68);
+        let student3 = new Student("Ramesh", 103, 79);
+        let student4 = new Student("Revanth", 104, 48);
+
+        let button = document.getElementById("showBtn");
+
+        let Div = document.getElementById("d1");
+
+        button.addEventListener("click", function() {
+
+        Div.innerHTML += "<h3>Student 1</h3>";
+        Div.innerHTML += student1.getDetails();
+        Div.innerHTML += "<br>Grade: " + student1.getGrade() + "<hr>";
+
+        Div.innerHTML += "<h3>Student 2</h3>";
+        Div.innerHTML += student2.getDetails();
+        Div.innerHTML += "<br>Grade: " + student2.getGrade() + "<hr>";
+
+        Div.innerHTML += "<h3>Student 3</h3>";
+        Div.innerHTML += student3.getDetails();
+        Div.innerHTML += "<br>Grade: " + student3.getGrade() + "<hr>";
+
+        Div.innerHTML += "<h3>Student 4</h3>";
+        Div.innerHTML += student4.getDetails();
+        Div.innerHTML += "<br>Grade: " + student4.getGrade();
+
+
+        });
+    </script>
+
+</body>
+</html>

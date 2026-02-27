@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vehicle Mgmt Sys</title>
+
+    <style>
+
+        h1 {
+            color: chocolate;
+            text-align: center;
+            
+        }
+
+        h2 {
+            color: rgb(87, 10, 182);
+        }
+
+        #d1 {
+            font-family: Georgia;
+            color: rgb(39, 18, 2);
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+
+<body style="background-color: rgb(151, 173, 173);">
+
+    <h1>Vehicle Management System</h2>
+
+    <button style="background-color: rgb(186, 163, 12);" id="showBtn"> Click here</button> <br><br>
+
+    <fieldset id="f1">
+    <div id="d1"></div>
+    </fieldset>
+
+    <script>
+      
+        class Vehicle {
+
+            brand;
+            speed;
+
+            constructor(brand, speed) {
+                this.brand = brand;
+                this.speed = speed;
+            }
+
+            displayInfo() {
+                return ` <strong>Brand:</strong> ${this.brand} <br>
+                        <strong>Speed:</strong> ${this.speed} km/h`;
+            }
+        }
+
+ 
+        class Car extends Vehicle {
+
+       
+            fuelType;
+
+            constructor(brand, speed, fuelType) {
+                super(brand, speed);
+                this.fuelType = fuelType;
+            }
+
+            showCarDetails() {
+                return ` <strong>Fuel Type:</strong> ${this.fuelType}`;
+            }
+        }
+
+    
+        let car1 = new Car("Honda", 160, "Diesel");
+        let car2 = new Car("Mahindra", 200, "Diesel");
+        let car3 = new Car("BMW", 220, "Diesel");
+        
+        let button = document.getElementById("showBtn");
+
+        let Div1 = document.getElementById("d1");
+
+        
+        button.addEventListener("click", function() {
+
+        Div1.innerHTML += "<h2>Car Details</h3>";
+
+        Div1.innerHTML += car1.displayInfo() + "<br>";
+        Div1.innerHTML += car1.showCarDetails() + "<br> <hr> <br>";
+
+        Div1.innerHTML += car2.displayInfo() + "<br>";
+        Div1.innerHTML += car2.showCarDetails() + "<br> <hr> <br> ";
+
+        Div1.innerHTML += car3.displayInfo() + "<br>";
+        Div1.innerHTML += car3.showCarDetails()+ "<br>";
+
+         });
+    </script>
+
+</body>
+</html>
