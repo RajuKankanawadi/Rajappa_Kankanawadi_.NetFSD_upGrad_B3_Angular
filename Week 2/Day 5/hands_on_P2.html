@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ShopEase - E-Commerce Landing Page</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<style>
+:root {
+  --bs-primary: #6f4cb1;
+  --bs-primary-rgb: 111,66,193;
+}
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f');
+  background-size: cover;
+  background-position: center;
+  color: rgb(184, 118, 118);
+  padding: 120px 0;
+}
+
+.product-img {
+  height: 200px;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #6a8198;
+  color: rgb(188, 185, 116);
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">ShopEase</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse d-none d-lg-flex">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="#newsletter">Newsletter</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Menu</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+      <li class="nav-item"><a class="nav-link" href="#newsletter">Newsletter</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<section class="hero text-center">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Welcome to ShopEase</h1>
+    <p class="lead">Discover the best deals on top quality products</p>
+    <a href="#products" class="btn btn-light btn-lg mt-3">Shop Now</a>
+  </div>
+</section>
+
+<div id="productCarousel" class="carousel slide my-5 container" data-bs-ride="carousel">
+  <div class="carousel-inner rounded shadow">
+
+    <div class="carousel-item active">
+      <img src="https://images.unsplash.com/photo-1513708927688-890a1e21f0f9"
+           class="d-block w-100" style="height:400px; object-fit:cover;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Latest Fashion</h5>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7"
+           class="d-block w-100" style="height:400px; object-fit:cover;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Premium Gadgets</h5>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+           class="d-block w-100" style="height:400px; object-fit:cover;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Accessories Collection</h5>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+
+<section id="products" class="container my-5">
+  <h2 class="text-center mb-4">Featured Products</h2>
+
+  <div class="row g-4">
+
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card shadow-sm">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+             class="card-img-top product-img">
+        <div class="card-body text-center">
+          <h6>Smart Watch</h6>
+          <p class="text-primary fw-bold">$99</p>
+          <button class="btn btn-primary btn-sm">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card shadow-sm">
+        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f"
+             class="card-img-top product-img">
+        <div class="card-body text-center">
+          <h6>Stylish Jacket</h6>
+          <p class="text-primary fw-bold">$149</p>
+          <button class="btn btn-primary btn-sm">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card shadow-sm">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+             class="card-img-top product-img">
+        <div class="card-body text-center">
+          <h6>Headphones</h6>
+          <p class="text-primary fw-bold">$79</p>
+          <button class="btn btn-primary btn-sm">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card shadow-sm">
+        <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7"
+             class="card-img-top product-img">
+        <div class="card-body text-center">
+          <h6>Camera</h6>
+          <p class="text-primary fw-bold">$299</p>
+          <button class="btn btn-primary btn-sm">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="newsletter" class="bg-light py-5">
+  <div class="container text-center">
+    <h3>Subscribe to our Newsletter</h3>
+    <p>Get updates about latest offers</p>
+
+    <form class="row justify-content-center">
+      <div class="col-md-6 col-lg-4">
+        <input type="email" class="form-control mb-3" placeholder="Enter your email" required>
+      </div>
+      <div class="col-auto">
+        <button class="btn btn-primary mb-3">Subscribe</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+<footer class="text-center py-4">
+  <p class="mb-0">© 2026 ShopEase. All Rights Reserved.</p>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
