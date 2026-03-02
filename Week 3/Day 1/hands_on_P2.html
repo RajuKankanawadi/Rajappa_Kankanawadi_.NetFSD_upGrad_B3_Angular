@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ Toggle Section</title>
+
+
+    <script  src="https://code.jquery.com/jquery-4.0.0.js"> </script>
+
+    <style>
+        body {
+            font-family: Verdana;
+            background-color: antiquewhite;
+        }
+
+        .container {
+            width: 600px;
+            margin: 40px auto;
+            background-color: beige;
+        }
+
+        .q1 {
+            background-color: #8f6767;
+            padding: 10px;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+        .a1 {
+            display: none; 
+            padding: 10px;
+            background-color: rgb(162, 106, 85);
+            border-left: 3px solid #326396;
+        }
+
+        .active {
+            background-color: #007bff;
+            color: cornsilk
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2 style="text-align: center;">Frequently Asked Questions</h2>
+
+    <div class="faq">
+        <div class="q1">1. What is your Name?</div>
+        <div class="a1">My name is Rajappa Kankanawadi.</div>
+
+        <div class="q1">2. What is your qualification?</div>
+        <div class="a1">I have completed Bachelor's Degree in ECE from JCE Belagavi and I am continuously upgrading my technical skills.</div>
+
+        <div class="q1">3. What are your hobbies?</div>
+        <div class="a1">My hobbies include playing Kabaddi, learning new technologies, and improving my technical skills.</div>
+
+        <div class="q1">4. What is your technical skill set?</div>
+        <div class="a1">I have knowledge of HTML, CSS, JavaScript, Java, and SQL.</div>
+
+        <div class="q1">5. What is your career goal?</div>
+        <div class="a1">My goal is to grow in the IT field and build a strong career in Software Development.</div>
+    </div>
+</div>
+
+<script>
+$(document).ready(function(){
+
+    $(".q1").click(function(){
+
+        $(".a1").hide();
+
+        $(this).next(".a1").slideToggle(1000);
+
+        $(this).toggleClass("active");
+
+    });
+
+});
+</script>
+
+</body>
+</html>

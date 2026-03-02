@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Feedback Form</title>
+
+     <script  src="https://code.jquery.com/jquery-4.0.0.js"> </script>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #ca8888;
+        }
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: antiquewhite;
+          
+        }
+         input, select, textarea {
+            width: 100%;
+            padding: 5px;
+            margin: 8px 0px;
+         }
+         h2 {
+            text-align: center;
+            color: brown
+         }
+        
+        button {
+            padding: 8px 15px;
+            background: palevioletred;
+            color: rgb(10, 9, 14);
+            cursor: pointer;
+        }
+        .msg {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    
+
+<div class="container">
+    <h2>Student Feedback Form</h2>
+
+    <form id="feedbackForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="n1" name="n1" placeholder="Enter your Name"> <br>
+
+        <label for="email">Email Id:</label>
+        <input type="email" id="email" name="email"  pattern="[a-z0-9._%+-]+@gmail\.com" placeholder="example01@gmail.com"><br>
+
+        <select id="r1">
+            <option value="">Select Course Rating:</option>
+            <option>Excellent</option>
+            <option>Good</option>
+            <option>Average</option>
+            <option>Poor</option>
+        </select>
+
+        <textarea id="c1" placeholder="Enter your Comments"></textarea>
+
+        <button type="button" id="b1">Submit</button>
+    </form>
+
+    <div class="msg"></div>
+</div>
+
+<script>
+    $(document).ready(function(){
+
+        $("#b1").click(function(){
+
+         
+            let name = $("#n1").val();
+            let email = $("#email").val();
+
+        
+            
+             if(name === "" || email === ""){
+                $(".msg").text("Please enter both Name and Email.").css("color", "red");
+            } 
+             else {
+                 $(".msg").text("Thank you! Your feedback has been submitted successfully.").css("color", "green");
+
+                
+                $("#feedbackForm")[0].reset();
+            }
+
+        });
+
+    });
+</script>
+
+</body>
+</html>

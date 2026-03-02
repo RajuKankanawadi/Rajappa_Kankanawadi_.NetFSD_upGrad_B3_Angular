@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive To-Do List</title>
+
+      <script  src="https://code.jquery.com/jquery-4.0.0.js"> </script>
+   
+
+    <style>
+        body {
+            font-family: 'Arial Narrow Bold';
+            color: rgb(6, 76, 138);
+            background-color: burlywood;
+        }
+
+        .container {
+            width: 500px;
+            margin: 40px auto;
+        }
+
+        input {
+            width: 70%;
+            padding: 8px;
+            background-color: antiquewhite;
+        }
+
+        button {
+            padding: 8px 12px;
+            cursor: pointer;
+            background-color: rgb(117, 147, 147);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background: #dc7575;
+            margin-top: 6px;
+            padding: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+     
+        .completed {
+            text-decoration: line-through;
+            color: burlywood
+        }
+
+        .counts {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .deleteBtn {
+            background: red;
+            color: blue;
+            border: none;
+            padding: 4px 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2 style="color:maroon ; text-align: center;">Interactive To-Do List</h2>
+
+   
+    <input type="text" id="t1" placeholder="Enter the task">
+    <button id="addBtn">Add</button>
+
+
+    <ul id="tL1"></ul>
+
+   
+    <div class="counts">
+        Total Tasks: <span id="totalCount">0</span> <br><br>
+        Completed Tasks: <span id="completCount">0</span>
+    </div>
+</div>
+
+<script>
+$(document).ready(function(){
+
+    
+    function updateCounts(){
+        let totalTasks = $("#tL1 li").length;
+        let completedTasks = $("#tL1 li.completed").length;
+
+        $("#totalCount").text(totalTasks);
+        $("#completCount").text(completedTasks);
+    }
+
+    
+    $("#addBtn").on("click", function(){
+
+        let taskValue = $("#t1").val();
+
+        if(taskValue !== ""){
+
+            var newTask = "<li>" +
+                          "<span class='taskText'>" + taskValue + "</span>" +
+                          "<button class='deleteBtn'>Delete</button>" +
+                          "</li>";
+
+            $("#tL1").append(newTask);
+
+            $("#t1").val("");
+
+            updateCounts();
+        }
+    });
+
+   
+    $("#tL1").on("click", ".taskText", function(){
+        $(this).parent().toggleClass("completed");
+        updateCounts();
+    });
+
+    $("#tL1").on("click", ".deleteBtn", function(){
+        $(this).parent().remove();
+        updateCounts();
+    });
+
+});
+</script>
+
+</body>
+</html>

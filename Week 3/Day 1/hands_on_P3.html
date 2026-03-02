@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Cart</title>
+
+
+  <script  src="https://code.jquery.com/jquery-4.0.0.js"> </script>
+
+    <style>
+        body {
+            font-family: Georgia;
+            background-color: bisque;
+        }
+        h2 {
+            color:blue;
+             text-align: center;
+        }
+
+        .header {
+            background:rgb(176, 64, 64);
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .cart-count {
+            font-weight: bold;
+            color: rgb(20, 2, 18);
+        }
+
+        .container {
+            width: 700px;
+            margin: 30px auto;
+        }
+
+        .product {
+            border: 1px solid mediumvioletred;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 6px 12px;
+            cursor: pointer;
+        }
+
+        .msg {
+            margin-left: 10px;
+            color: green;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Product List with Add to Cart Counter</h2>
+
+<div class="header">
+    Cart Items: <span class="cart-count">0</span>
+</div>
+
+<div class="container">
+
+    <div class="product">
+        <h3>Laptop</h3>
+        <button class="add-btn" data-name="Laptop">Add to Cart</button>
+        <span class="msg"></span>
+    </div>
+
+    <div class="product">
+        <h3>Smart Phones</h3>
+        <button class="add-btn" data-name="Phone">Add to Cart</button>
+        <span class="msg"></span>
+    </div>
+
+    <div class="product">
+        <h3>Headphones</h3>
+        <button class="add-btn" data-name="Headphones">Add to Cart</button>
+        <span class="msg"></span>
+    </div>
+
+    <div class="product">
+        <h3>Smart Watch</h3>
+        <button class="add-btn" data-name="Watch">Add to Cart</button>
+        <span class="msg"></span>
+    </div>
+
+    <div class="product">
+        <h3>Home Appliances</h3>
+        <button class="add-btn" data-name="Home App">Add to Cart</button>
+        <span class="msg"></span>
+    </div>
+
+</div>
+
+<script>
+$(document).ready(function(){
+
+    let cartCount = 0;
+
+   
+    $(".container").on("click", ".add-btn", function(){
+
+        cartCount++;
+
+        $(".cart-count").text(cartCount);
+
+        $(this).prop("disabled", true)
+               .attr("title", "Already Added");
+
+        $(this).siblings(".msg")
+               .text(" Added to Cart");
+
+    });
+
+});
+</script>
+
+</body>
+</html>
