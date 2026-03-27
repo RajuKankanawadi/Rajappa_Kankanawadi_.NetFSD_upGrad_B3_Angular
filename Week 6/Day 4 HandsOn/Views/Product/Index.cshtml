@@ -1,0 +1,19 @@
+﻿@model List<WebApplication1.Models.Product>
+
+<h1 class="text-center">
+    Product List </h1>
+
+<ul class="list-group">
+    @foreach (var item in Model)
+    {
+        <li class="list-group-item">
+            <strong>@item.Name</strong> - @item.Price Rs.
+            <br />
+            Category: @item.Category
+            <br />
+            <a href="/Product/Details/@item.Id" class="btn btn-primary btn-sm mt-2">
+                View Details
+            </a>
+        </li>
+    }
+</ul>

@@ -1,0 +1,11 @@
+﻿@model WebApplication1.Models.Product
+
+<h1 class="text-center">Product Details</h1>
+
+<div class="card p-3">
+    <h3>@Model.Name</h3>
+    <p><strong>Price:</strong> @Model.Price Rs.</p>
+    <p><strong>Category:</strong> @Model.Category</p>
+
+    <a href="/Product" class="btn btn-secondary">Back to List</a>
+</div>
