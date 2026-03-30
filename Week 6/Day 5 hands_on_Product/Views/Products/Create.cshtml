@@ -1,0 +1,38 @@
+﻿@model WebApplication2.Models.Product
+
+<h2>Create Product</h2> <br />
+
+<form asp-action="Create" method="post">
+    <div class="mb-3">
+        <label>Product Id</label>
+        <input asp-for="ProductId" class="form-control" />
+        <span asp-validation-for="ProductId" style="color:red"></span>
+    </div>
+
+    <div class ="mb-3">
+        <label>Product Name</label>
+        <input asp-for="ProductName" class="form-control" />
+        <span asp-validation-for="ProductName" style="color:red"></span>
+    </div>
+
+    <div class="mb-3">
+        <label>Price</label>
+        <input asp-for="Price" class="form-control" />
+        <span asp-validation-for="Price" style="color:red"></span>
+    </div>
+
+    <div class="mb-3">
+        <label>Category</label>
+        <input asp-for="Category" class="form-control" />
+        <span asp-validation-for="Category" style="color:red"></span>
+    </div>
+
+ 
+    <button type="submit" class="btn btn-success">Save</button>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
