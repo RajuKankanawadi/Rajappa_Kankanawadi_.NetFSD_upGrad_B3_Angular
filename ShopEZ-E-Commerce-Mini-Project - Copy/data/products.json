@@ -1,0 +1,22 @@
+[
+{"id":1,"name":"Laptop","price":60000,"image":"images/p1.jpg","category":"Electronics","description":"High performance laptop","rating":4.5},
+{"id":2,"name":"I Phone","price":25000,"image":"images/p2.jpg","category":"Electronics","description":"Latest smartphone","rating":4.2},
+{"id":3,"name":"Headphones","price":2000,"image":"images/p3.jpg","category":"Accessories","description":"Noise cancelling","rating":4.0},
+{"id":4,"name":"Camera","price":45000,"image":"images/p4.jpg","category":"Electronics","description":"HD camera","rating":4.6},
+{"id":5,"name":"Watch","price":5000,"image":"images/p5.jpg","category":"Accessories","description":"Smart watch","rating":4.1},
+{"id":6,"name":"Keyboard","price":1500,"image":"images/p6.jpg","category":"Accessories","description":"Keyboard","rating":4.3},
+{"id":7,"name":"Mouse","price":800,"image":"images/p7.jpg","category":"Accessories","description":"Mouse","rating":4.0},
+{"id":8,"name":"Tablet","price":20000,"image":"images/p8.jpg","category":"Electronics","description":"Tablet","rating":4.2},
+{"id":9,"name":"Speaker","price":3000,"image":"images/p9.jpg","category":"Accessories","description":"Speaker","rating":4.1},
+{"id":10,"name":"Monitor","price":12000,"image":"images/p10.jpg","category":"Electronics","description":"Monitor","rating":4.4},
+{"id":11,"name":"Printer","price":7000,"image":"images/p11.jpg","category":"Electronics","description":"Printer","rating":4.0},
+{"id":12,"name":"Gaming Chair","price":15000,"image":"images/p12.jpg","category":"Accessories","description":"Chair","rating":4.5},
+{"id":13,"name":"Power Bank","price":1200,"image":"images/p13.jpg","category":"Accessories","description":"Power bank","rating":4.1},
+{"id":14,"name":"Router","price":2500,"image":"images/p14.jpg","category":"Electronics","description":"Router","rating":4.2},
+{"id":15,"name":"SSD","price":5000,"image":"images/p15.jpg","category":"Electronics","description":"SSD","rating":4.4},
+{"id":16,"name":"Hard Disk","price":6000,"image":"images/p16.jpg","category":"Electronics","description":"HDD","rating":4.3},
+{"id":17,"name":"USB Drive","price":700,"image":"images/p17.jpg","category":"Accessories","description":"USB","rating":4.0},
+{"id":18,"name":"Webcam","price":2500,"image":"images/p18.jpg","category":"Electronics","description":"Webcam","rating":4.1},
+{"id":19,"name":"Mic","price":3500,"image":"images/p19.jpg","category":"Accessories","description":"Mic","rating":4.2},
+{"id":20,"name":"VR Headset","price":18000,"image":"images/p20.jpg","category":"Electronics","description":"VR","rating":4.6}
+]
