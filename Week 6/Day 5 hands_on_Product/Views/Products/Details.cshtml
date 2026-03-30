@@ -1,0 +1,14 @@
+﻿@model WebApplication2.Models.Product
+
+<h2>Product Details</h2> <br />
+<form>
+   
+<p><strong>Product Id:</strong> @Model.ProductId</p><br />
+<p><strong>Product Name:</strong> @Model.ProductName</p><br />
+<p><strong>Price:</strong> @Model.Price</p><br />
+<p><strong>Category:</strong> @Model.Category</p><br />
+
+<a asp-action="Index" class="btn btn-primary">Back to List</a>
+
+</form>
+
