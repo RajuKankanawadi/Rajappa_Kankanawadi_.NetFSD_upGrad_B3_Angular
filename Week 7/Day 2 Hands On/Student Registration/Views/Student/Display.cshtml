@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewData["Title"] = "Student Details";
+}
+
+                <h2 class="text-center mb-4">Student Details</h2>
+
+                <div class="mb-3">
+                    <label class="form-label">Student Name</label>
+                    <p class="form-control">@ViewBag.StudentName</p>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Age</label>
+                    <p class="form-control">@ViewBag.Age</p>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Course</label>
+                    <p class="form-control">@ViewBag.Course</p>
+                </div>
+
+                <div class="text-center">
+                    <a asp-action="Register" asp-controller="Student" class="btn btn-primary">
+                        Back to Form
+                    </a>
+                </div>

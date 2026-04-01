@@ -1,0 +1,47 @@
+﻿@model WebApplication5.Models.ContactInfo
+
+
+        <h2 class="text-primary mb-4">Contact Details</h2>
+
+        @if (Model != null)
+        {
+            <table class="table table-bordered">
+                <tr>
+                    <th>Contact Id</th>
+                    <td>@Model.ContactId</td>
+                </tr>
+                <tr>
+                    <th>First Name</th>
+                    <td>@Model.FirstName</td>
+                </tr>
+                <tr>
+                    <th>Last Name</th>
+                    <td>@Model.LastName</td>
+                </tr>
+                <tr>
+                    <th>Company Name</th>
+                    <td>@Model.CompanyName</td>
+                </tr>
+                <tr>
+                    <th>Email Id</th>
+                    <td>@Model.EmailId</td>
+                </tr>
+                <tr>
+                    <th>Mobile Number</th>
+                    <td>@Model.MobileNo</td>
+                </tr>
+                <tr>
+                    <th>Designation</th>
+                    <td>@Model.Designation</td>
+                </tr>
+            </table>
+        }
+        else
+        {
+            <div class="alert alert-danger">
+                Contact Not Found
+            </div>
+        }
+
+        <a asp-action="ShowContacts" class="btn btn-secondary">Back to List</a>
+   
