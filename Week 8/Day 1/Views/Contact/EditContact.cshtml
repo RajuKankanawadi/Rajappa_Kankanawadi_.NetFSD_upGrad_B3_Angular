@@ -1,0 +1,45 @@
+﻿@model WebApplication10.Models.ContactInfo
+
+<h2>Edit Contact</h2>
+
+<form asp-action="EditContact" method="post">
+    <input type="hidden" asp-for="ContactId" />
+
+    <div class="mb-3">
+        <label>First Name</label>
+        <input asp-for="FirstName" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Last Name</label>
+        <input asp-for="LastName" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Email</label>
+        <input asp-for="EmailId" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Mobile</label>
+        <input asp-for="MobileNo" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Designation</label>
+        <input asp-for="Designation" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Company</label>
+        <select asp-for="CompanyId" asp-items="ViewBag.Companies" class="form-control"></select>
+    </div>
+
+    <div class="mb-3">
+        <label>Department</label>
+        <select asp-for="DepartmentId" asp-items="ViewBag.Departments" class="form-control"></select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update</button>
+    <a asp-action="ShowContacts" class="btn btn-secondary">Cancel</a>
+</form>

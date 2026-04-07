@@ -1,0 +1,16 @@
+﻿using WebApplication10.Models;
+
+namespace WebApplication10.Repository
+{
+    public interface IContactRepository
+    {
+        List<ContactInfo> GetAllContacts();
+        ContactInfo GetContactById(int id);
+        void AddContact(ContactInfo contact);
+        void UpdateContact(ContactInfo contact);
+        void DeleteContact(int id);
+
+        List<Company> GetCompanies();
+        List<Department> GetDepartments();
+    }
+}
