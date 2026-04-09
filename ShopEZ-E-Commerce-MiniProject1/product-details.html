@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold">ShopEZ-E-Commerce</a>
+
+            <div>
+                <a href="product-details.html" class="btn btn-outline-primary me-2">Details</a>
+
+                <a href="products.html" class="btn btn-warning me-2">Products</a>
+
+                <a href="cart.html" class="btn btn-warning me-2">
+                    Cart (<span id="cartCount">0</span>)
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="border-0 rounded-4 p-4">
+     <h2 class="text-center mb-4 text-black fw-bold">Product Details</h2>
+
+        <div class="row align-items-center">
+
+            <div class="col-md-6 mb-4">
+                <img id="img" class="img-fluid custom-img">
+            </div>
+
+            <div class="col-md-6">
+                <div class="product-details-box shadow rounded bg-light">
+
+                    <p id="name" class="fs-4 fw-bold">Name:</p>
+                    <p id="desc" class="text-muted">Description:</p>
+                    <p id="price" class="price">Price:</p>
+                    <p id="stars" class="star">Rating:</p>
+
+                    <div class="mb-4">
+                        <label for="qty" class="form-label fw-bold">Quantity:</label>
+                        <input type="number" id="qty" class="form-control" value="1" min="1">
+                    </div>
+
+                    <button id="add" class="btn btn-success">
+                        Add to Cart
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-4 mt-4 w-100">
+        &copy; 2026 ShopEZ. All Rights Reserved.
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/product-details.js"></script>
+</body>
+</html>
