@@ -22,7 +22,7 @@ $(function() {
             let full = Math.floor(rating);
             let half = rating - full >= 0.5 ? 1 : 0;
             let empty = 5 - full - half;
-            return "★".repeat(full) + (half ? "½" : "") + "☆".repeat(empty);
+            return "★".repeat(full) + (half ?"☆" : "") + "☆ ".repeat(empty);
         }
         $("#stars").html("<b>Rating : </b> " + (getStars(p.rating)));
 
