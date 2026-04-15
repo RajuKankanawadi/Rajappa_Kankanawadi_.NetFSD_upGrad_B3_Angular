@@ -1,4 +1,4 @@
-// checkout.js
+
 $(function () {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
