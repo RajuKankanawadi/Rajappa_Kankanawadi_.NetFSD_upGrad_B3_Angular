@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - ShopEZ</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+  <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">ShopEZ-E-Commerce</a>
+            <div>
+
+            <a href="products.html" class="btn btn-outline-primary me-2">Products</a>
+
+                <a href="index.html" class="btn btn-warning me-2"> Home</a>
+
+                <a href="cart.html" class="btn btn-warning me-2">
+                    Cart (<span id="cartCount">0</span>)
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+   <div class="border-0 rounded-4 p-4">
+    <h2 class="text-center mb-4 text-black fw-bold">Products</h2> 
+   
+    <!-- Search + Filter -->
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <input id="search" class="form-control" placeholder="Search Products...">
+        </div>
+        <div class="col-md-6">
+            <select id="category" class="form-control">
+                <option value="all">All Categories</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Accessories">Accessories</option>
+            </select>
+            </div>
+
+    </div> 
+   
+    <br><br>
+
+    <!-- Products Grid -->
+    <div class="row" id="productList"></div>
+
+    <!-- Pagination -->
+    <nav>
+        <ul class="pagination justify-content-center" id="pagination"></ul>
+    </nav>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-light text-center py-4 mt-4 w-100">
+    &copy; 2026 ShopEZ E-Commerce. All rights reserved.
+</footer>
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/products.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

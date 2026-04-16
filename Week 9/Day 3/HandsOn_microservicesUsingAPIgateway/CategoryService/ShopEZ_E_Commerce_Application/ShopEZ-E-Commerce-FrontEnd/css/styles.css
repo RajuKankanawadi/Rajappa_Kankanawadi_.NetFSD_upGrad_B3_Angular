@@ -1,0 +1,430 @@
+/* =========================
+   Index Page
+========================= */
+body {
+    font-family: Cambria, serif;
+    font-size: medium;
+    background-color: lightcoral;
+    color: navy;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 6px rgb(216,85,85);
+}
+
+/* Homepage / Product List Images */
+.product-home-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* =========================
+   Product Page
+========================= */
+/* Products Page Cards */
+#productList .card {
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    color: darkblue;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+#productList .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+#productList .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    background-color: pink;
+    padding: 10px;
+}
+
+#productList .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 220px;
+    padding: 18px;
+}
+
+#productList .card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+}
+
+#productList .card-text {
+    font-size: 15px;
+    color: #b97b7b;
+    font-family: 'Times New Roman';
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: orangered;
+    font-family:'Times New Roman';
+}
+
+/* Card hover and general styling */
+.card {
+    border: none;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.card-body { text-align: center; }
+
+/* Headings on Product Page */
+.prd, .prd3, .prd4 { text-align: center; color: black; margin-bottom: 20px; }
+.prd3, .prd4 { background-color: lightcoral; padding: 10px; border-radius: 5px; }
+
+/* =========================
+   Product Details Page
+========================= */
+.custom-img {
+    width: 90%;
+    max-height: 350px;
+    object-fit: contain;
+    border-radius: 14px;
+    background-color: #fff;
+    transition: 0.3s ease;
+}
+
+.custom-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.product-details-box {
+    padding: 20px;
+}
+
+#name {
+    font-size: 16px;
+    font-weight: bold;
+    color: brown;
+    text-align: center;
+}
+
+#desc {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#qty {
+    color: rgb(220, 14, 141);
+    font-size: 16px;
+}
+
+#add {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+#add:hover {
+    transform: translateY(-2px);
+}
+
+/* Stars */
+#stars {
+    font-size: 15px;
+    font-weight: bold;
+    color: orange;
+}
+
+.star {
+    color: gold;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* =========================
+   Cart Page
+========================= */
+.cart-page {
+    background-color: lightcoral;
+    min-height: 100vh;
+}
+
+.cart-card h2,
+.summary-card h4 {
+    font-weight: 700;
+    color: #333;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+}
+
+.qty-input {
+    width: 80px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.remove-btn {
+    border-radius: 8px;
+    padding: 6px 14px;
+}
+
+.cart-card,
+.summary-card {
+    background: bisque;
+    border-radius: 20px;
+    position: sticky;
+    top: 20px;
+}
+
+#checkoutBtn {
+    border-radius: 10px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+/* =========================
+   Checkout Page
+========================= */
+.checkout-page {
+    background-color: lightcoral;
+    min-height: 100vh;
+}
+
+#c1 {
+    text-align: center;
+}
+
+.checkout-card,
+.summary-card {
+    background: bisque;
+    border-radius: 20px;
+}
+
+.checkout-card h2,
+.summary-card h3 {
+    font-weight: 700;
+    color: #333;
+}
+
+.checkout-card .form-label {
+    font-weight: 600;
+    color: #444;
+}
+
+.checkout-card .form-control,
+.checkout-card .form-select {
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #8f8181;
+    transition: all 0.3s ease;
+}
+
+.checkout-card .form-control:focus,
+.checkout-card .form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 6px rgba(13, 110, 253, 0.25);
+}
+
+.checkout-card textarea {
+    resize: none;
+}
+
+.error {
+    font-size: 13px;
+    display: block;
+    margin-top: 4px;
+}
+
+.summary-card #checkoutItems {
+    max-height: 250px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.summary-card #checkoutItems::-webkit-scrollbar {
+    width: 6px;
+}
+
+.summary-card #checkoutItems::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+#checkoutItems strong {
+    color: #222;
+}
+
+#checkoutItems small {
+    color: #666;
+}
+
+#checkoutTotal {
+    font-size: 22px;
+}
+
+.checkout-card button {
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* =========================
+   Login Page
+========================= */
+.login-page {
+    background: lightcoral;
+}
+
+.login-page .card {
+    background-color: #c7778f;
+    border-radius: 20px;
+}
+
+.login-page .bg-primary {
+    background: linear-gradient(to right, #ff85a2, #ff5c8a) !important;
+}
+
+.login-page h2 {
+    color: black !important;
+    margin-bottom: 0 !important;
+}
+
+.login-page .card-body {
+    background-color: bisque !important;
+}
+
+.login-page .form-label {
+    color: #c2185b;
+}
+
+.login-page .form-control {
+    border: 1px solid #f8a5c2;
+    padding: 10px;
+}
+
+.login-page .form-control:focus {
+    border-color: #ff5c8a;
+    box-shadow: 0 0 5px rgba(255, 92, 138, 0.4);
+}
+
+.login-page .btn-success {
+    background-color: green;
+    border: none;
+}
+
+.login-page .btn-success:hover {
+    background-color: green;
+}
+
+/* =========================
+   Footer
+========================= */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    font-size: 15px;
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   Media Queries (Responsive)
+========================= */
+@media (max-width: 992px) {
+    .summary-card {
+        position: static;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .checkout-card,
+    .summary-card,
+    .cart-card {
+        padding: 20px !important;
+    }
+
+    .checkout-card h2,
+    .summary-card h3 {
+        font-size: 24px;
+    }
+
+    .cart-card h2,
+    .summary-card h4 {
+        font-size: 20px;
+    }
+
+    .table {
+        font-size: 14px;
+    }
+
+    .qty-input {
+        width: 65px;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    #checkoutBtn,
+    .btn-outline-primary {
+        font-size: 14px;
+    }
+
+    .checkout-card button {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .table th,
+    .table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .qty-input {
+        width: 55px;
+        font-size: 12px;
+    }
+
+    .remove-btn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    #checkoutItems {
+        font-size: 14px;
+    }
+}
+
+
+       
