@@ -1,0 +1,90 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\91938\\source\\repos\\C# codes file\\ApiGateWay1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1AA2ABF4-52F3-5A78-C7EF-E9007367A4F8}|ApiGateWay1\\ApiGateWay1.csproj|c:\\users\\91938\\source\\repos\\c# codes file\\apigateway1\\apigateway1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1AA2ABF4-52F3-5A78-C7EF-E9007367A4F8}|ApiGateWay1\\ApiGateWay1.csproj|solutionrelative:apigateway1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AA2ABF4-52F3-5A78-C7EF-E9007367A4F8}|ApiGateWay1\\ApiGateWay1.csproj|c:\\users\\91938\\source\\repos\\c# codes file\\apigateway1\\apigateway1\\jsconfigapi.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1AA2ABF4-52F3-5A78-C7EF-E9007367A4F8}|ApiGateWay1\\ApiGateWay1.csproj|solutionrelative:apigateway1\\jsconfigapi.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AA2ABF4-52F3-5A78-C7EF-E9007367A4F8}|ApiGateWay1\\ApiGateWay1.csproj|c:\\users\\91938\\source\\repos\\c# codes file\\apigateway1\\apigateway1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1AA2ABF4-52F3-5A78-C7EF-E9007367A4F8}|ApiGateWay1\\ApiGateWay1.csproj|solutionrelative:apigateway1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AA2ABF4-52F3-5A78-C7EF-E9007367A4F8}|ApiGateWay1\\ApiGateWay1.csproj|c:\\users\\91938\\source\\repos\\c# codes file\\apigateway1\\apigateway1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AA2ABF4-52F3-5A78-C7EF-E9007367A4F8}|ApiGateWay1\\ApiGateWay1.csproj|solutionrelative:apigateway1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\91938\\source\\repos\\C# codes file\\ApiGateWay1\\ApiGateWay1\\appsettings.json",
+              "RelativeDocumentMoniker": "ApiGateWay1\\appsettings.json",
+              "ToolTip": "C:\\Users\\91938\\source\\repos\\C# codes file\\ApiGateWay1\\ApiGateWay1\\appsettings.json",
+              "RelativeToolTip": "ApiGateWay1\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-16T13:04:26.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\91938\\source\\repos\\C# codes file\\ApiGateWay1\\ApiGateWay1\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ApiGateWay1\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\91938\\source\\repos\\C# codes file\\ApiGateWay1\\ApiGateWay1\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ApiGateWay1\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-16T11:15:35.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\91938\\source\\repos\\C# codes file\\ApiGateWay1\\ApiGateWay1\\Program.cs",
+              "RelativeDocumentMoniker": "ApiGateWay1\\Program.cs",
+              "ToolTip": "C:\\Users\\91938\\source\\repos\\C# codes file\\ApiGateWay1\\ApiGateWay1\\Program.cs",
+              "RelativeToolTip": "ApiGateWay1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T10:35:52.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "jsConfigAPI.json",
+              "DocumentMoniker": "C:\\Users\\91938\\source\\repos\\C# codes file\\ApiGateWay1\\ApiGateWay1\\jsConfigAPI.json",
+              "RelativeDocumentMoniker": "ApiGateWay1\\jsConfigAPI.json",
+              "ToolTip": "C:\\Users\\91938\\source\\repos\\C# codes file\\ApiGateWay1\\ApiGateWay1\\jsConfigAPI.json",
+              "RelativeToolTip": "ApiGateWay1\\jsConfigAPI.json",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-16T10:32:03.822Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

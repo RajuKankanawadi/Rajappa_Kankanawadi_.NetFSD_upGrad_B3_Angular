@@ -1,0 +1,215 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\91938\\source\\repos\\C# codes file\\ContactService\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CF5ADBC9-41F7-AE4C-1446-E30EF6135A09}|ContactService\\ContactService.csproj|c:\\users\\91938\\source\\repos\\c# codes file\\contactservice\\contactservice\\contactservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CF5ADBC9-41F7-AE4C-1446-E30EF6135A09}|ContactService\\ContactService.csproj|solutionrelative:contactservice\\contactservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF5ADBC9-41F7-AE4C-1446-E30EF6135A09}|ContactService\\ContactService.csproj|c:\\users\\91938\\source\\repos\\c# codes file\\contactservice\\contactservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF5ADBC9-41F7-AE4C-1446-E30EF6135A09}|ContactService\\ContactService.csproj|solutionrelative:contactservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF5ADBC9-41F7-AE4C-1446-E30EF6135A09}|ContactService\\ContactService.csproj|c:\\users\\91938\\source\\repos\\c# codes file\\contactservice\\contactservice\\migrations\\20260416094727_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF5ADBC9-41F7-AE4C-1446-E30EF6135A09}|ContactService\\ContactService.csproj|solutionrelative:contactservice\\migrations\\20260416094727_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF5ADBC9-41F7-AE4C-1446-E30EF6135A09}|ContactService\\ContactService.csproj|c:\\users\\91938\\source\\repos\\c# codes file\\contactservice\\contactservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CF5ADBC9-41F7-AE4C-1446-E30EF6135A09}|ContactService\\ContactService.csproj|solutionrelative:contactservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF5ADBC9-41F7-AE4C-1446-E30EF6135A09}|ContactService\\ContactService.csproj|c:\\users\\91938\\source\\repos\\c# codes file\\contactservice\\contactservice\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CF5ADBC9-41F7-AE4C-1446-E30EF6135A09}|ContactService\\ContactService.csproj|solutionrelative:contactservice\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF5ADBC9-41F7-AE4C-1446-E30EF6135A09}|ContactService\\ContactService.csproj|c:\\users\\91938\\source\\repos\\c# codes file\\contactservice\\contactservice\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF5ADBC9-41F7-AE4C-1446-E30EF6135A09}|ContactService\\ContactService.csproj|solutionrelative:contactservice\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF5ADBC9-41F7-AE4C-1446-E30EF6135A09}|ContactService\\ContactService.csproj|c:\\users\\91938\\source\\repos\\c# codes file\\contactservice\\contactservice\\services\\contactserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF5ADBC9-41F7-AE4C-1446-E30EF6135A09}|ContactService\\ContactService.csproj|solutionrelative:contactservice\\services\\contactserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF5ADBC9-41F7-AE4C-1446-E30EF6135A09}|ContactService\\ContactService.csproj|c:\\users\\91938\\source\\repos\\c# codes file\\contactservice\\contactservice\\services\\icontactservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF5ADBC9-41F7-AE4C-1446-E30EF6135A09}|ContactService\\ContactService.csproj|solutionrelative:contactservice\\services\\icontactservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF5ADBC9-41F7-AE4C-1446-E30EF6135A09}|ContactService\\ContactService.csproj|c:\\users\\91938\\source\\repos\\c# codes file\\contactservice\\contactservice\\repositories\\contactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF5ADBC9-41F7-AE4C-1446-E30EF6135A09}|ContactService\\ContactService.csproj|solutionrelative:contactservice\\repositories\\contactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF5ADBC9-41F7-AE4C-1446-E30EF6135A09}|ContactService\\ContactService.csproj|c:\\users\\91938\\source\\repos\\c# codes file\\contactservice\\contactservice\\repositories\\icontactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF5ADBC9-41F7-AE4C-1446-E30EF6135A09}|ContactService\\ContactService.csproj|solutionrelative:contactservice\\repositories\\icontactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF5ADBC9-41F7-AE4C-1446-E30EF6135A09}|ContactService\\ContactService.csproj|c:\\users\\91938\\source\\repos\\c# codes file\\contactservice\\contactservice\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF5ADBC9-41F7-AE4C-1446-E30EF6135A09}|ContactService\\ContactService.csproj|solutionrelative:contactservice\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ContactService",
+              "DocumentMoniker": "C:\\Users\\91938\\source\\repos\\C# codes file\\ContactService\\ContactService\\ContactService.csproj",
+              "RelativeDocumentMoniker": "ContactService\\ContactService.csproj",
+              "ToolTip": "C:\\Users\\91938\\source\\repos\\C# codes file\\ContactService\\ContactService\\ContactService.csproj",
+              "RelativeToolTip": "ContactService\\ContactService.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-16T13:27:45.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c6f34f0d-7ae5-4f3a-be61-fe0c21ae9eb8}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20260416094727_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\91938\\source\\repos\\C# codes file\\ContactService\\ContactService\\Migrations\\20260416094727_InitialCreate.cs",
+              "RelativeDocumentMoniker": "ContactService\\Migrations\\20260416094727_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\91938\\source\\repos\\C# codes file\\ContactService\\ContactService\\Migrations\\20260416094727_InitialCreate.cs",
+              "RelativeToolTip": "ContactService\\Migrations\\20260416094727_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T09:47:27.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "C:\\Users\\91938\\source\\repos\\C# codes file\\ContactService\\ContactService\\Models\\Contact.cs",
+              "RelativeDocumentMoniker": "ContactService\\Models\\Contact.cs",
+              "ToolTip": "C:\\Users\\91938\\source\\repos\\C# codes file\\ContactService\\ContactService\\Models\\Contact.cs",
+              "RelativeToolTip": "ContactService\\Models\\Contact.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T05:35:26.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IContactService.cs",
+              "DocumentMoniker": "C:\\Users\\91938\\source\\repos\\C# codes file\\ContactService\\ContactService\\Services\\IContactService.cs",
+              "RelativeDocumentMoniker": "ContactService\\Services\\IContactService.cs",
+              "ToolTip": "C:\\Users\\91938\\source\\repos\\C# codes file\\ContactService\\ContactService\\Services\\IContactService.cs",
+              "RelativeToolTip": "ContactService\\Services\\IContactService.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA9wAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T05:31:57.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IContactRepository.cs",
+              "DocumentMoniker": "C:\\Users\\91938\\source\\repos\\C# codes file\\ContactService\\ContactService\\Repositories\\IContactRepository.cs",
+              "RelativeDocumentMoniker": "ContactService\\Repositories\\IContactRepository.cs",
+              "ToolTip": "C:\\Users\\91938\\source\\repos\\C# codes file\\ContactService\\ContactService\\Repositories\\IContactRepository.cs",
+              "RelativeToolTip": "ContactService\\Repositories\\IContactRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T05:26:25.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "C:\\Users\\91938\\source\\repos\\C# codes file\\ContactService\\ContactService\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "ContactService\\Controllers\\ContactController.cs",
+              "ToolTip": "C:\\Users\\91938\\source\\repos\\C# codes file\\ContactService\\ContactService\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "ContactService\\Controllers\\ContactController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T05:20:24.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\91938\\source\\repos\\C# codes file\\ContactService\\ContactService\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ContactService\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\91938\\source\\repos\\C# codes file\\ContactService\\ContactService\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ContactService\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-16T03:41:24.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\91938\\source\\repos\\C# codes file\\ContactService\\ContactService\\Program.cs",
+              "RelativeDocumentMoniker": "ContactService\\Program.cs",
+              "ToolTip": "C:\\Users\\91938\\source\\repos\\C# codes file\\ContactService\\ContactService\\Program.cs",
+              "RelativeToolTip": "ContactService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T03:20:22.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\91938\\source\\repos\\C# codes file\\ContactService\\ContactService\\appsettings.json",
+              "RelativeDocumentMoniker": "ContactService\\appsettings.json",
+              "ToolTip": "C:\\Users\\91938\\source\\repos\\C# codes file\\ContactService\\ContactService\\appsettings.json",
+              "RelativeToolTip": "ContactService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-16T03:19:04.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ContactServiceImpl.cs",
+              "DocumentMoniker": "C:\\Users\\91938\\source\\repos\\C# codes file\\ContactService\\ContactService\\Services\\ContactServiceImpl.cs",
+              "RelativeDocumentMoniker": "ContactService\\Services\\ContactServiceImpl.cs",
+              "ToolTip": "C:\\Users\\91938\\source\\repos\\C# codes file\\ContactService\\ContactService\\Services\\ContactServiceImpl.cs",
+              "RelativeToolTip": "ContactService\\Services\\ContactServiceImpl.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAA3wBQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T03:13:25.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ContactRepository.cs",
+              "DocumentMoniker": "C:\\Users\\91938\\source\\repos\\C# codes file\\ContactService\\ContactService\\Repositories\\ContactRepository.cs",
+              "RelativeDocumentMoniker": "ContactService\\Repositories\\ContactRepository.cs",
+              "ToolTip": "C:\\Users\\91938\\source\\repos\\C# codes file\\ContactService\\ContactService\\Repositories\\ContactRepository.cs",
+              "RelativeToolTip": "ContactService\\Repositories\\ContactRepository.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAswCwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T03:09:44.744Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
