@@ -1,0 +1,12 @@
+
+
+indent_style = space
+indent_size = 4
+
+dotnet_style_require_accessibility_modifiers = always:warning
+
+dotnet_diagnostic.CA1822.severity = warning
+dotnet_diagnostic.CA2000.severity = warning
+
+dotnet_diagnostic.CS8600.severity = warning
+dotnet_diagnostic.CS8602.severity = warning
