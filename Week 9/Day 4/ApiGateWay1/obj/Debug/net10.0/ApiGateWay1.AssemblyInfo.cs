@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiGateWay1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40d80e29c261e15d08dd322b7ec1a6c7268b2c54")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b4f77eec3bd2c230fcd157cf634b3e1934238d4")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiGateWay1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiGateWay1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
